@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main>
+        <form method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="item_name">Choose Your Item:</label>
+            <div class="custom-dropdown">
+                <ul>
+                    <li>
+                        <input type="radio" id="pizza" name="item_name" value="Pizza" required>
+                        <label for="pizza">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQ8d_yAysSTk1jJGcPyuPSOH4qU-kH9KNLQ&s" alt="Pizza" width="50" height="50"> 
+                            Pizza - <strong>200/-</strong>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="pasta" name="item_name" value="Pasta">
+                        <label for="pasta">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRovs-UolqwaFBbVw6D0LIpi11GzoLjC4BSA&s" alt="Pasta" width="50" height="50"> 
+                            Pasta - <strong>150/-</strong>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="biryani" name="item_name" value="Biryani">
+                        <label for="biryani">
+                            <img src="https://cdn.zeptonow.com/production///tr:w-600,ar-100-100,pr-true,f-auto,q-80/web/recipes/biryani.png" alt="Biryani" width="50" height="50"> 
+                            Biryani - <strong>120/-</strong>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="shawarma" name="item_name" value="Shawarma">
+                        <label for="shawarma">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/190130-chicken-shwarma-horizontal-1549421250.png?crop=0.668xw:1.00xh;0.168xw,0&resize=1200:*" alt="Shawarma" width="50" height="50"> 
+                            Shawarma - <strong>90/-</strong>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="dessert" name="item_name" value="Dessert">
+                        <label for="dessert">
+                            <img src="https://www.brit.co/media-library/3-ingredient-dessert-recipes.jpg?id=23305200&width=300" alt="Dessert" width="50" height="50"> 
+                            Dessert - <strong>100/-</strong>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="drink" name="item_name" value="Drink">
+                        <label for="drink">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLfquHnmb1c3Lk83hmAaRSt9ZMkwuhjhOYw&s" alt="Drink" width="50" height="50"> 
+                            Drink - <strong>70/-</strong>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="chocolate" name="item_name" value="Chocolate">
+                        <label for="chocolate">
+                            <img src="https://www.coldlove.in/cdn/shop/files/Healthy-AF-calories-mentioned_SFChoc1200x1200_68f36071-594f-4896-a072-fa380b5204cf.jpg?v=1723026075&width=1445" alt="Chocolate" width="50" height="50"> 
+                            Chocolate - <strong>50/-</strong>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+        
+            <button><a href="/order" class="btn">Buy Now</a></buttton>
+        </form>        
+    </main>
+    <footer>
+        <p>&copy; 2024 Food Website. All Rights Reserved.</p>
+    </footer>
+    </body>
+</html>
